@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adyan Shaikh | Portfolio</title>
+  <meta name="description" content="Portfolio of Adyan Shaikh (UIN: 231P063) — projects, skills, education, and contact." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Top progress bar -->
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Adyan Shaikh</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+              Theme
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">UIN: <strong>231P063</strong></p>
+          <h1 class="hero__title">
+            Hi, I’m <span class="accent">Adyan Shaikh</span>.
+            <br />
+            I build clean, user-friendly web experiences.
+          </h1>
+          <p class="hero__subtitle">
+            A simple, modern portfolio made with HTML, CSS, and JavaScript — fast, responsive, and easy to edit.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
+            <button class="btn btn--soft" id="copyUIN" type="button" data-copy="231P063">
+              Copy UIN
+            </button>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num" data-count="8">0</div>
+              <div class="stat__label">Skills</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="6">0</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="3">0</div>
+              <div class="stat__label">Certifications</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="avatarCard">
+            <img class="avatarCard__img" src="./profile.jpeg" alt="Portrait of Adyan Shaikh" />
+            <div class="avatarCard__meta">
+              <div>
+                <div class="avatarCard__name">Adyan Shaikh</div>
+                <div class="avatarCard__uin">UIN: 231P063</div>
+              </div>
+              <span class="badge">Available</span>
+            </div>
+          </div>
+
+          <div class="glassNote">
+            <p><strong>Tip:</strong> Edit the Projects section to match your real work. This template is designed to be easy to customize.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="scrollHint" href="#about" aria-label="Scroll to About section">
+        <span class="scrollHint__mouse" aria-hidden="true"></span>
+        <span class="scrollHint__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p>Short introduction and what you’re aiming for.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Who I am</h3>
+            <p>
+              I’m <strong>Adyan Shaikh</strong> (UIN: <strong>231P063</strong>). I’m interested in web development and building
+              smooth, responsive interfaces. I enjoy learning by building real projects and improving them over time.
+            </p>
+            <p class="muted">
+              Replace this text with your real summary (goals, interests, strengths, and what kind of roles you’re seeking).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Quick info</h3>
+            <ul class="infoList">
+              <li><span>Full Name</span><strong>Adyan Shaikh</strong></li>
+              <li><span>UIN</span><strong>231P063</strong></li>
+              <li><span>Focus</span><strong>Frontend • Web Development</strong></li>
+              <li><span>Location</span><strong>India</strong></li>
+            </ul>
+            <div class="chipRow" aria-label="Highlights">
+              <span class="chip">Responsive UI</span>
+              <span class="chip">Clean Code</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p>A balanced mix of technical and soft skills.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skillCard card">
+            <h3>Frontend</h3>
+            <div class="bar" data-bar="90">
+              <span>HTML</span><span class="bar__val">90%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+            <div class="bar" data-bar="85">
+              <span>CSS</span><span class="bar__val">85%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+            <div class="bar" data-bar="80">
+              <span>JavaScript</span><span class="bar__val">80%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skillCard card">
+            <h3>Tools</h3>
+            <div class="bar" data-bar="75">
+              <span>Git / GitHub</span><span class="bar__val">75%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+            <div class="bar" data-bar="70">
+              <span>VS Code</span><span class="bar__val">70%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+            <div class="bar" data-bar="65">
+              <span>Figma (Basics)</span><span class="bar__val">65%</span>
+              <div class="bar__track"><div class="bar__fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skillCard card">
+            <h3>Soft Skills</h3>
+            <ul class="checkList">
+              <li>Communication</li>
+              <li>Consistency</li>
+              <li>Time management</li>
+              <li>Learning mindset</li>
+            </ul>
+            <p class="muted">
+              Tip: Make these match your real strengths and add 1–2 examples (clubs, hackathons, teamwork).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p>Show work with clear outcomes and tools used.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project card">
+            <div class="project__top">
+              <h3>Portfolio Website</h3>
+              <span class="tag">HTML • CSS • JS</span>
+            </div>
+            <p>
+              A fast static portfolio with dark/light theme, smooth scrolling, and responsive layout.
+            </p>
+            <ul class="miniList">
+              <li>Accessible navigation and sections</li>
+              <li>Theme saved in localStorage</li>
+              <li>Scroll progress + animations</li>
+            </ul>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Task Tracker</h3>
+              <span class="tag">JS • LocalStorage</span>
+            </div>
+            <p>Simple task tracker to add, complete, and filter tasks, saved in the browser.</p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Weather Dashboard</h3>
+              <span class="tag">API • JS</span>
+            </div>
+            <p>Search weather by city with clean UI and error handling.</p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Mini E-Commerce UI</h3>
+              <span class="tag">UI • CSS</span>
+            </div>
+            <p>Product listing page with filters, cards, and responsive grid.</p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>College Notes Hub</h3>
+              <span class="tag">Web • Organization</span>
+            </div>
+            <p>One place to store and share notes by subject and semester (static prototype).</p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Calculator</h3>
+              <span class="tag">JS</span>
+            </div>
+            <p>A simple calculator with keyboard support and clean layout.</p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Live</a>
+              <a class="link" href="#" aria-disabled="true">Code</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="muted footNote">
+          Replace the “Live/Code” links with your real URLs. You can also remove projects you don’t want to show.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2>Education</h2>
+          <p>Your academic timeline.</p>
+        </div>
+
+        <div class="timeline card">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>Degree / Program Name</h3>
+              <p class="muted">College / University • Year</p>
+              <p>
+                Add your department, key subjects, CGPA (optional), and achievements.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>HSC / 12th</h3>
+              <p class="muted">School / Board • Year</p>
+              <p>Optional: percentage, stream, highlights.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>SSC / 10th</h3>
+              <p class="muted">School / Board • Year</p>
+              <p>Optional: percentage, highlights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Send a message (opens your email client) or copy details.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Message</h3>
+            <form id="contactForm" class="form">
+              <label>
+                <span>Name</span>
+                <input required name="name" type="text" placeholder="Your name" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input required name="email" type="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea required name="message" rows="5" placeholder="Write your message..."></textarea>
+              </label>
+              <button class="btn" type="submit">Send Email</button>
+              <p class="muted small">
+                This is a static website; the form uses a <code>mailto:</code> link (no backend needed).
+              </p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Details</h3>
+            <div class="contactGrid">
+              <div class="contactRow">
+                <span class="muted">Name</span>
+                <div class="contactRow__right">
+                  <strong>Adyan Shaikh</strong>
+                  <button class="iconBtn" type="button" data-copy="Adyan Shaikh">Copy</button>
+                </div>
+              </div>
+              <div class="contactRow">
+                <span class="muted">UIN</span>
+                <div class="contactRow__right">
+                  <strong>231P063</strong>
+                  <button class="iconBtn" type="button" data-copy="231P063">Copy</button>
+                </div>
+              </div>
+              <div class="contactRow">
+                <span class="muted">Email</span>
+                <div class="contactRow__right">
+                  <strong>your.email@example.com</strong>
+                  <button class="iconBtn" type="button" data-copy="your.email@example.com">Copy</button>
+                </div>
+              </div>
+              <div class="contactRow">
+                <span class="muted">Links</span>
+                <div class="contactRow__right">
+                  <a class="link" href="#" aria-disabled="true">GitHub</a>
+                  <a class="link" href="#" aria-disabled="true">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Adyan Shaikh • UIN: 231P063</p>
+      <a class="link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
